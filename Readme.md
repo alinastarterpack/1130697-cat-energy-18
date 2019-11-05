@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алина Пономарёва](https://up.htmlacademy.ru/adaptive/18/user/1130697).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Пудников](https://up.htmlacademy.ru/adaptive/18/user/71418).
 
 ---
 
