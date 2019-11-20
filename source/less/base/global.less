@@ -1,28 +1,14 @@
-// Тут могут быть только ТЕГИ
-
 body {
-  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-family: @main-font;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-}
-
-h1,
-h2,
-h3 {
-  color: @title-color;
-  margin: 0;
-  padding: 0;
+  color: @color-title;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
-}
-
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
+  color: @color-title;
 }
 
 ul {
@@ -32,16 +18,15 @@ ul {
 }
 
 td {
-  font-family: "Arial", sans-serif;
+  font-family: @second-font;
   font-size: 12px;
   line-height: 16px;
-  color: @text-color;
+  color: @color-text;
 }
 
 th {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 16px;
   line-height: 20px;
 }
 
@@ -51,7 +36,7 @@ fieldset {
 
 label {
   text-transform: uppercase;
-  color: @label-color;
+  color: @color-label;
   display: block;
   margin-bottom: 14px;
 }
@@ -59,9 +44,8 @@ label {
 input {
   box-sizing: border-box;
   text-transform: uppercase;
-  color: @text-color;
-  font-family: "OswaldRegular", sans-serif;
-  font-size: 16px;
+  color: @color-text;
+  font-family: @main-font;
   padding: 8px;
 }
 

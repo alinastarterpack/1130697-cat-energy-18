@@ -1,10 +1,9 @@
 .program {
   box-sizing: border-box;
-  background-color: @bg-color;
+  background-color: @color-bg;
   width: 280px;
   height: 266px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   margin-top: 20px;
   margin-right: 20px;
 
@@ -24,6 +23,9 @@
 }
 
 .program__title {
+  margin: 0;
+  padding: 0;
+  color: @color-title;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -32,18 +34,18 @@
 }
 
 .program__info {
-  font-family: "Arial", sans-serif;
-  font-size: @text-size;
+  font-family: @second-font;
+  font-size: @fz-small;
   line-height: 18px;
   max-width: 225px;
-  color: @text-color;
+  color: @color-text;
   padding-top: 14px;
   padding-bottom: 5px;
 }
 
 .program__catalog {
   display: block;
-  color: @title-color;
+  color: @color-title;
   text-transform: uppercase;
   padding-top: 15px;
   background-image: url("../img/icon-right-arrow-long.svg");

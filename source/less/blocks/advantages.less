@@ -2,8 +2,15 @@
   box-sizing: border-box;
 }
 
+.advantages__inner {
+  .inner;
+}
+
 .advantages__title {
-  font-size: @subtitle-size;
+  margin: 0;
+  padding: 0;
+  color: @color-title;
+  font-size: @fz-big;
   font-weight: 400;
   padding-bottom: 35px;
   padding-top: 15px;
@@ -18,40 +25,31 @@
 }
 
 .advantages__item {
-  font-family: "Arial", sans-serif;
-  color: @text-color;
+  font-family: @second-font;
+  color: @color-text;
   padding-left: 80px;
   margin-right: 20px;
-  font-size: @text-size;
+  font-size: @fz-small;
   line-height: 18px;
   max-width: 195px;
   padding-bottom: 25px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: 5px 4px;
 
-  &--health {
+  &--1 {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: 5px 4px;
   }
 
-  &--powder {
+  &--2 {
     background-image: url("../img/advantage-powder@1x.png");
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: 5px 4px;
   }
 
-  &--dining {
+  &--3 {
     background-image: url("../img/advantage-dining@1x.png");
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: 5px 4px;
   }
 
-  &--changes {
+  &--4 {
     background-image: url("../img/advantage-clock@1x.png");
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: 5px 4px;
   }
 }
