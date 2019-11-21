@@ -1,0 +1,48 @@
+.demo {
+  background-color: @color-bg;
+}
+
+.demo__inner {
+  .inner;
+}
+
+.demo__title {
+  font-size: @fz-big;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.demo__text {
+  font-family: @second-font;
+  font-size: @fz-small;
+  max-width: 270px;
+}
+
+.demo__progress-image {
+  display: flex;
+  height: 250px;
+  background-repeat: no-repeat;
+
+  &--before {
+    background-image: url("../img/before-mobile@1x.png");
+  }
+
+  &--after {
+    background-image: url("../img/after-mobile@1x.png");
+  }
+}
+
+.demo__buttons-wrapper {
+  padding-bottom: 38px;
+}
+
+.demo__progress-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  text-transform: uppercase;
+}
