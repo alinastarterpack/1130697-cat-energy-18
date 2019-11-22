@@ -28,35 +28,27 @@
           <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="form__block fieldset" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="fieldset__personal personal">
-              <label class="personal__label" for="name">Имя:*
-                <input class="personal__textfield" type="text" name="cat-name" id="name" placeholder="Барсик" required>
-              </label>
-              <label class="personal__label" for="weight">Вес (кг):*
-                <input class="personal__textfield" type="number" name="cat-weight" id="weight" placeholder="7" min="0" required>
-              </label>
-              <label class="personal__label" for="age">Возраст (лет):
-                <input class="personal__textfield" type="number" name="cat-age" id="age" placeholder="7" min="1" max="25">
-              </label>
+              <input class="personal__textfield" type="text" name="cat-name" id="name" placeholder="Барсик" required>
+              <label class="personal__label" for="name">Имя:*</label>
+              <input class="personal__textfield" type="number" name="cat-weight" id="weight" placeholder="7" min="0" required>
+              <label class="personal__label" for="weight">Вес (кг):*</label>
+              <input class="personal__textfield" type="number" name="cat-age" id="age" placeholder="7" min="1" max="25">
+              <label class="personal__label" for="age">Возраст (лет):</label>
             </fieldset>
             <fieldset class="fieldset__program-selection program-selection">
-              <label class="program-selection__label" for="program1">Похудение
-                <input class="program-selection__radio" type="radio" name="program" value="slim" id="program1">
-              </label>
-              <label class="program-selection__label" for="program2">Набор массы
-                <input class="program-selection__radio" type="radio" name="program" value="pro" id="program2">
-              </label>
-              <label class="program-selection__label" for="program3">Не знаю (нужен ваш совет)
-                <input class="program-selection__radio" type="radio" name="program" value="other" id="program3">
-              </label>
+              <input class="program-selection__radio" type="radio" name="program" value="slim" id="program1">
+              <label class="program-selection__label" for="program1">Похудение</label>
+              <input class="program-selection__radio" type="radio" name="program" value="pro" id="program2">
+              <label class="program-selection__label" for="program2">Набор массы</label>
+              <input class="program-selection__radio" type="radio" name="program" value="other" id="program3">
+              <label class="program-selection__label" for="program3">Не знаю (нужен ваш совет)</label>
             </fieldset>
             <fieldset class="fieldset__contacts contacts">
               <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-              <label class="contacts__label" for="email">E-mail:*
-                <input class="contacts__textfield" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-              </label>
-              <label class="contacts__label" for="phone">Телефон:*
-                <input class="contacts__textfield" type="tel" name="phone-number" id="phone" placeholder="8 (960) 900-60-90" required>
-              </label>
+              <input class="contacts__textfield" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <label class="contacts__label" for="email">E-mail:*</label>
+              <input class="contacts__textfield" type="tel" name="phone-number" id="phone" placeholder="8 (960) 900-60-90" required>
+              <label class="contacts__label" for="phone">Телефон:*</label>
             </fieldset>
             <fieldset class="fieldset__comment comment">
               <legend class="comment__title">Комментарий</legend>
