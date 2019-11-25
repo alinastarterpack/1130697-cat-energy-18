@@ -1,9 +1,21 @@
+.copyright {
+  line-height: 16px;
+}
+
 .copyright__link {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link-title {
   font-family: @second-font;
   color: @color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    width: 162px;
+  }
 }

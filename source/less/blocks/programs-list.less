@@ -1,5 +1,19 @@
 .programs-list__inner {
-  .inner();
+  .inner(@value: 20px);
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .programs-list__inner {
+    .inner(@value: 30px);
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs-list__inner {
+    .inner(@value: 80px);
+    flex-direction: row;
+  }
 }

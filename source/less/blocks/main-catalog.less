@@ -1,6 +1,9 @@
 .main-catalog__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  .list-reset();
+  border-bottom: 1px solid @color-border;
 }
 
 .main-catalog {
@@ -9,7 +12,7 @@
 }
 
 .main-catalog__inner {
-  .inner();
+  .inner(@value: 20px);
 }
 
 .main-catalog__item {
@@ -26,9 +29,13 @@
 }
 
 .main-catalog__view-all {
+  display: block;
+  min-width: 200px;
+  min-height: 200px;
   background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
   background-size: 31px;
-  background-position: top;
+  background-position: 126px 27px;
 }
 
 .main-catalog__subtitle {
@@ -37,8 +44,10 @@
   color: @color-title;
   text-align: center;
   font-weight: 400;
+  line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 5px;
+  padding-top: 80px;
 }
 
 .main-catalog__subtext {
@@ -46,13 +55,80 @@
   font-family: @second-font;
   font-weight: 400;
   font-size: 12px;
+  line-height: 16px;
   color: @color-text;
   margin-top: 0;
 }
 
 .main-catalog__button {
-  padding: 11px 20px;
   border: none;
   font: inherit;
   margin-bottom: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-catalog__inner {
+    .inner(@value: 30px);
+  }
+
+  .main-catalog__list {
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0 none;
+  }
+
+  .main-catalog__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 324px;
+    min-height: 431px;
+    background-color: @color-bg;
+    margin-bottom: 92px;
+  }
+
+  .main-catalog__view-all {
+    border: 1px solid #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 432px;
+    max-width: 324px;
+    background-size: 61px;
+    background-position: center 55px;
+  }
+
+  .main-catalog__subtitle {
+    max-width: 135px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 22px;
+  }
+
+  .main-catalog__subtext {
+    font-size: 16px;
+    max-width: 170px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog__inner {
+    .inner(@value: 80px);
+  }
+
+  .main-catalog__item {
+    max-width: 245px;
+    margin-right: 10px;
+  }
+
+  .main-catalog__view-all {
+    width: 245px;
+  }
+
+  .main-catalog__button {
+    padding: 13px 39px 12px 41px;
+  }
 }

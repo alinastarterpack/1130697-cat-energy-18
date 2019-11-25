@@ -3,5 +3,38 @@
 }
 
 .header__inner {
-  .inner();
+  .inner(@value: 20px);
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    border: 0 none;
+  }
+
+  .header__inner {
+    .inner (@value: 30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    border: 0 none;
+  }
+
+  .header__inner {
+    .inner(@value: 80px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    padding-top: 38px;
+  }
 }

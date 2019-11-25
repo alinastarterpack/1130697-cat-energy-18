@@ -1,6 +1,7 @@
 .result__list {
   display: flex;
   justify-content: space-between;
+  .list-reset();
 }
 
 .result__item {
@@ -11,6 +12,7 @@
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
+  line-height: 24px;
   padding: 3px 20px 12px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
@@ -23,6 +25,7 @@
   font-family: @second-font;
   font-size: 12px;
   text-transform: lowercase;
+  line-height: 12px;
   max-width: 60px;
   text-align: center;
 }
@@ -31,4 +34,24 @@
   text-transform: uppercase;
   font-size: @fz-small;
   text-align: center;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .result {
+    display: flex;
+  }
+
+  .result__total-costs {
+    font-size: 20px;
+    line-height: 30px;
+    width: 175px;
+    text-align: right;
+  }
+
+  .result__item-value {
+    font-size: 30px;
+    line-height: 37px;
+    margin-right: 42px;
+  }
 }

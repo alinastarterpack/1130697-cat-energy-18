@@ -12,3 +12,57 @@
     background-image: url("../img/icon-close.svg");
   }
 }
+
+.main-navigation__list {
+  display: flex;
+  flex-direction: column;
+  .list-reset();
+}
+
+.main-navigation__item {
+  font-family: "OswaldMedium", "Arial", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @color-border;
+
+  &--current-page {
+    border-top: 1px solid @color-border;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 21px;
+  }
+
+  .main-navigation__item {
+    font-family: @main-font;
+    color: @color-label;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 36px;
+    border: none;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-navigation__list {
+    padding-top: 50px;
+  }
+
+  .main-navigation__item {
+    margin-left: 36px;
+    border: none;
+  }
+}

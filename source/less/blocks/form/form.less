@@ -1,13 +1,12 @@
 .form__inner {
-  .inner();
+  .inner(@value: 20px);
 }
 
 .form__title {
   margin: 0;
   padding: 0;
   color: @color-title;
-  font-size: @fz-big;
-  font-weight: 400;
+  .subtitle-t-d();
   padding-bottom: 10px;
   padding-top: 15px;
   border-bottom: none;
@@ -16,7 +15,7 @@
 .form__text {
   text-transform: uppercase;
   font-size: @fz-small;
-  width: 230px;
+  max-width: 230px;
   line-height: 18px;
   padding-bottom: 20px;
 }
@@ -33,4 +32,29 @@
   padding: 11px 20px;
   border: none;
   font: inherit;
+}
+
+@media (min-width: @tablet-width) {
+  .form__inner {
+    .inner(@value: 30px);
+  }
+
+  .form__title {
+    .title-t-d();
+    padding-top: 35px;
+    padding-bottom: 44px;
+    border-bottom: none;
+  }
+
+  .form__text {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__inner {
+    .inner(@value: 80px);
+  }
 }

@@ -3,13 +3,12 @@
 }
 
 .demo__inner {
-  .inner();
+  .inner(@value: 20px);
 }
 
 .demo__title {
-  font-size: @fz-big;
-  font-weight: 400;
-  padding-top: 20px;
+  .subtitle-t-d();
+  padding-top: 16px;
   padding-bottom: 8px;
   margin: 0;
 }
@@ -38,6 +37,10 @@
   padding-bottom: 38px;
 }
 
+.demo__range {
+  .entry-field();
+}
+
 .demo__progress-button {
   padding: 0;
   border: none;
@@ -45,4 +48,29 @@
   color: inherit;
   background-color: transparent;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .demo__inner {
+    .inner(@value: 30px);
+    background-color: #ffffff;
+  }
+
+  .demo__title {
+    .title-t-d();
+    padding-top: 41px;
+    padding-bottom: 47px;
+  }
+
+  .demo__text {
+    .text-t-d();
+    max-width: 100%;
+    padding-bottom: 46px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .demo__inner {
+    .inner(@value: 80px);
+  }
 }

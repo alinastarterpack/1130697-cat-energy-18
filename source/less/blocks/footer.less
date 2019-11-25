@@ -3,5 +3,25 @@
 }
 
 .footer__inner {
-  .inner();
+  .inner(@value: 20px);
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer__inner {
+    .inner(@value: 30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__inner {
+    .inner(@value: 80px);
+  }
 }
