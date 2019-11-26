@@ -1,25 +1,16 @@
 .main__title {
+  .inner();
+  .subtitle-t-d();
   margin: 0;
   padding: 0;
-  .subtitle-t-d();
   border-bottom: 1px solid @color-border;
   padding-bottom: 27px;
   padding-top: 15px;
-  .inner(@value: 20px);
   color: @color-title;
-}
 
-@media (min-width: @tablet-width) {
-  .main__title {
-    .inner(@value: 30px);
+  @media (min-width: @tablet-width) {
     .title-t-d();
     padding-top: 55px;
     padding-bottom: 120px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main__title {
-    .inner(@value: 80px);
   }
 }

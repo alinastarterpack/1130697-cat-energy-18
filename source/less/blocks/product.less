@@ -1,21 +1,19 @@
 .product__wrapper {
   display: flex;
   justify-content: flex-start;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 
 .product__button {
   display: inline-block;
   padding: 13px 108px 12px 111px;
   margin-top: 0;
-}
 
-@media (min-width: @tablet-width) {
-  .product__wrapper {
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
-  .product__button {
+  @media (min-width: @tablet-width) {
     padding: 13px 93px 12px 95px;
     margin-bottom: 24px;
   }

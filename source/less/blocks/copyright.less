@@ -7,15 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+  }
 }
 
 .copyright__link-title {
   font-family: @second-font;
   color: @color-text;
-}
-
-@media (min-width: @tablet-width) {
-  .copyright__link {
-    width: 162px;
-  }
 }

@@ -1,19 +1,13 @@
 .programs-list__inner {
-  .inner(@value: 20px);
+  .inner();
   display: flex;
   flex-wrap: wrap;
-}
 
-@media (min-width: @tablet-width) {
-  .programs-list__inner {
-    .inner(@value: 30px);
+  @media (min-width: @tablet-width) {
     flex-direction: column;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .programs-list__inner {
-    .inner(@value: 80px);
+  @media (min-width: @desktop-width) {
     flex-direction: row;
   }
 }

@@ -1,27 +1,18 @@
 .footer {
   background-color: @color-bg;
-}
 
-.footer__inner {
-  .inner(@value: 20px);
-}
-
-@media (min-width: @tablet-width) {
-  .footer {
+  @media (min-width: @tablet-width) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
 
-  .footer__inner {
-    .inner(@value: 30px);
+.footer__inner {
+  .inner();
+
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .footer__inner {
-    .inner(@value: 80px);
   }
 }
