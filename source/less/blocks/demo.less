@@ -4,20 +4,39 @@
 
 .demo__inner {
   .inner();
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .demo__title {
-  font-size: @fz-big;
-  font-weight: 400;
-  padding-top: 20px;
+  .subtitle-t-d();
+  padding-top: 16px;
   padding-bottom: 8px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    .title-t-d();
+    padding-top: 41px;
+    padding-bottom: 47px;
+  }
 }
 
 .demo__text {
   font-family: @second-font;
   font-size: @fz-small;
-  max-width: 270px;
+  width: 270px;
+
+  @media (min-width: @tablet-width) {
+    .text-t-d();
+    width: 100%;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 435px;
+  }
 }
 
 .demo__progress-image {
@@ -36,6 +55,10 @@
 
 .demo__buttons-wrapper {
   padding-bottom: 38px;
+}
+
+.demo__range {
+  .entry-field();
 }
 
 .demo__progress-button {

@@ -1,7 +1,18 @@
 .footer {
   background-color: @color-bg;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer__inner {
   .inner();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

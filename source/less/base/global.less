@@ -1,9 +1,19 @@
 body {
+  min-width: 320px;
   font-family: @main-font;
   font-size: 16px;
+  line-height: 18px;
   margin: 0;
   padding: 0;
   color: @color-title;
+
+  @media (min-width: @tablet-width) {
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 24px;
+  }
 }
 
 a {
@@ -11,42 +21,13 @@ a {
   color: @color-title;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-td {
-  font-family: @second-font;
-  font-size: 12px;
-  line-height: 16px;
-  color: @color-text;
-}
-
-th {
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 20px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 fieldset {
   border: none;
-}
-
-label {
-  text-transform: uppercase;
-  color: @color-label;
-  display: block;
-  margin-bottom: 14px;
-}
-
-input {
-  box-sizing: border-box;
-  text-transform: uppercase;
-  color: @color-text;
-  font-family: @main-font;
-  padding: 8px;
 }
 
 input[type="number"] {
@@ -56,10 +37,4 @@ input[type="number"] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   appearance: none;
-}
-
-legend {
-  font-size: 24px;
-  line-height: 24px;
-  padding-bottom: 27px;
 }

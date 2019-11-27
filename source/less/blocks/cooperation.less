@@ -2,11 +2,18 @@
   .inner();
   display: flex;
   justify-content: space-between;
+  line-height: 20px;
 }
 
 .cooperation__text {
   text-transform: uppercase;
   max-width: 130px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 42px;
+  }
 }
 
 .cooperation__address {
@@ -14,4 +21,11 @@
   color: @color-text;
   font-size: @fz-small;
   max-width: 135px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    max-width: 155px;
+  }
 }
