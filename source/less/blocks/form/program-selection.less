@@ -1,5 +1,36 @@
+.program-selection {
+  margin-top: 40px;
+
+  @media (min-width: @width-tablet) {
+    width: 630px;
+    border: 1px solid #cdcdcd;
+    margin-top: 61px;
+    padding-top: 25px;
+    padding-left: 28px;
+  }
+
+  @media (min-width: @width-desktop) {
+    height: 170px;
+    margin-top: 0;
+  }
+}
+
+.program-selection__list {
+  .list-reset();
+}
+
+.program-selection__item {
+  display: flex;
+  margin-bottom: 12px;
+
+  @media (min-width: @width-tablet) {
+    .form-t-d();
+  }
+}
+
 .program-selection__label {
   .input-header();
+  padding-left: 14px;
 }
 
 .program-selection__radio {
