@@ -1,13 +1,17 @@
 .demo {
   background-color: @color-bg;
+
+  @media (min-width: @width-tablet) {
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 57%, @color-bg 57%, @color-bg 100%);
+  }
+
+  @media (min-width: @width-desktop) {
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 30%, @color-bg 30%, @color-bg 100%);
+  }
 }
 
 .demo__inner {
   .inner();
-
-  @media (min-width: @tablet-width) {
-    background-color: #ffffff;
-  }
 }
 
 .demo__title {
@@ -16,7 +20,7 @@
   padding-bottom: 8px;
   margin: 0;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @width-tablet) {
     .title-t-d();
     padding-top: 41px;
     padding-bottom: 47px;
@@ -24,17 +28,17 @@
 }
 
 .demo__text {
-  font-family: @second-font;
+  font-family: @font-second;
   font-size: @fz-small;
   width: 270px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @width-tablet) {
     .text-t-d();
     width: 100%;
     padding-bottom: 46px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @width-desktop) {
     width: 435px;
   }
 }
@@ -63,7 +67,7 @@
 
 .demo__progress-button {
   padding: 0;
-  border: none;
+  border: 0 none;
   font: inherit;
   color: inherit;
   background-color: transparent;

@@ -1,6 +1,6 @@
 .main-navigation__toggle {
   padding: 0;
-  border: none;
+  border: 0 none;
   font: inherit;
   width: 25px;
   height: 19px;
@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-color: #ffffff;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @width-tablet) {
     display: none;
   }
 
@@ -23,14 +23,14 @@
   flex-direction: column;
 
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @width-tablet) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 21px;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @width-desktop) {
     padding-top: 50px;
   }
 }
@@ -45,17 +45,17 @@
   padding-bottom: 20px;
   border-bottom: 1px solid @color-border;
 
-  @media (min-width: @tablet-width) {
-    font-family: @main-font;
+  @media (min-width: @width-tablet) {
+    font-family: @font-main;
     color: @color-label;
     font-size: 18px;
     text-align: left;
     margin-left: 36px;
-    border: 0 none;
+    border-color: transparent;
   }
 
   &--current-page {
-    @media (min-width: @tablet-width) {
+    @media (min-width: @width-tablet) {
       border-bottom: 2px solid @color-accent;
     }
   }

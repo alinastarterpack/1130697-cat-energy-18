@@ -1,7 +1,29 @@
+.personal__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 11px;
+
+  @media (min-width: @width-tablet) {
+    .form-t-d();
+    margin-bottom: 20px;
+  }
+}
+
 .personal__label {
   .input-header();
+  order: 1;
+  color: @color-label;
+  padding-right: 15px;
 }
 
 .personal__textfield {
+  height: 45px;
   .entry-field();
+  order: 2;
+  flex-grow: 1;
+
+  @media (min-width: @width-tablet) {
+    height: 52px;
+  }
 }

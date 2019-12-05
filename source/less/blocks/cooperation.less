@@ -1,3 +1,17 @@
+.cooperation {
+  &--index {
+    background-color: @color-lightest;
+  }
+
+  &--inner {
+    background-color: @color-bg;
+
+    @media (min-width: @width-desktop) {
+      background-color: @color-lightest;
+    }
+  }
+}
+
 .cooperation__inner {
   .inner();
   display: flex;
@@ -9,7 +23,7 @@
   text-transform: uppercase;
   max-width: 130px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @width-tablet) {
     font-size: 20px;
     line-height: 25px;
     padding-bottom: 42px;
@@ -17,12 +31,12 @@
 }
 
 .cooperation__address {
-  font-family: @second-font;
+  font-family: @font-second;
   color: @color-text;
   font-size: @fz-small;
   max-width: 135px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @width-tablet) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
