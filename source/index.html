@@ -9,11 +9,16 @@
     <header class="header">
       <div class="header__inner">
         <a class="header__logo logo">
-          <img class="logo__image" src="https://via.placeholder.com/191x39" width="191" height="39" alt="Логотип Cat Energy">
+          <picture class="logo__picture">
+            <source srcset="img/logo-mobile.png" media="(max-width: 767px)">
+            <source srcset="img/logo-tablet.svg" media="(max-width: 1299px)">
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+            <img class="logo__image" src="img/logo-desktop.svg" width="191" height="59" alt="Логотип Cat Energy">
+          </picture>
         </a>
-        <nav class="main-navigation">
-          <button class="main-navigation__toggle" type="button">Открыть меню</button>
-          <ul class="main-navigation__list">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-navigation__list main-navigation__list--index">
             <li class="main-navigation__item main-navigation__item--current-page"><a>Главная</a></li>
             <li class="main-navigation__item"><a href="catalog.html">Каталог продукции</a></li>
             <li class="main-navigation__item"><a href="form.html">Подбор программы</a></li>
@@ -27,10 +32,8 @@
         <h2 class="head-block__title">Функциональное питание для котов</h2>
         <p class="head-block__text">Занялся собой? Займись котом!</p>
         <picture class="head-block__picture">
-          <source srcset="https://via.placeholder.com/280x270" type="image/png" media="(min-width: 320px)">
-          <source srcset="https://via.placeholder.com/709x609" type="image/png" media="(min-width: 768px)">
-          <source srcset="https://via.placeholder.com/552x499" type="image/png" media="(min-width: 1300px)">
-          <img class="head-block__image" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Товар Cat Energy">
+          <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
+          <img class="head-block__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Товар Cat Energy">
         </picture>
         <div class="head-block__inner">
           <a class="head-block__button button" href="form.html">Подобрать программу</a>
@@ -58,7 +61,7 @@
             <li class="advantages__item">Функциональное питание содержит только полезные питательные вещества.</li>
             <li class="advantages__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
             <li class="advantages__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+            <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</li>
           </ul>
         </div>
       </section>
@@ -98,7 +101,7 @@
       <section class="cooperation cooperation--index">
         <div class="cooperation__inner">
           <h2 class="visually-hidden">Сотрудничество</h2>
-          <p class="cooperation__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="cooperation__text">Приглашаем<br> к сотрудничеству дилеров!</p>
           <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
         </div>
         <div class="cooperation__map">
@@ -109,7 +112,7 @@
     <footer class="footer">
       <div class="footer__inner">
         <a class="footer__logo logo">
-          <img class="logo__image" width="128" height="24" src="https://via.placeholder.com/128x24" alt="Cat Energy">
+          <img class="logo__image" width="128" height="24" src="img/logo-footer.svg" alt="Cat Energy">
         </a>
         <div class="footer__social social">
           <ul class="social__list">
@@ -133,10 +136,11 @@
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/">
             <span class="copyright__link-title">HTML Academy</span>
-            <img class="copyright__link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+            <img class="copyright__link-icon" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>
     </footer>
+    <script src="js/navigation-toggle.js"></script>
   </body>
 </html>

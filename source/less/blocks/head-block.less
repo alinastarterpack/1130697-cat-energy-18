@@ -1,8 +1,22 @@
 .head-block {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-size: 100% 305px;
 
   @media (min-width: @width-tablet) {
-    background-image: none;
+    .inner();
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    background-position: 70% 100%;
+    padding-bottom: 526px;
+  }
+
+  @media (min-width: @width-desktop) {
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 61% 57%, 103% 0;
+    background-size: 552px 499px, 700px 696px;
+    margin-top: -115px;
+    padding-top: 159px;
+    padding-bottom: 237px;
   }
 }
 
@@ -18,20 +32,23 @@
   font-size: @fz-big;
   line-height: 36px;
   text-align: center;
-  padding-top: 30px;
-  width: 320px;
+  padding-top: 63px;
+
+  @media (max-width: @width-mobile-only) {
+    padding-top: 28px;
+  }
 
   @media (min-width: @width-tablet) {
     .title-t-d();
     color: @color-title;
     text-align: left;
-    padding-left: 91px;
-    padding-bottom: 20px;
+    padding: 54px 0 14px 87px;
     width: 415px;
   }
 
   @media (min-width: @width-desktop) {
     padding-left: 81px;
+    padding-top: 64px;
   }
 }
 
@@ -40,17 +57,30 @@
   text-transform: uppercase;
   font-size: @fz-small;
   text-align: center;
+  padding-top: 8px;
 
   @media (min-width: @width-tablet) {
     font-size: 20px;
     line-height: 20px;
     color: @color-title;
     text-align: left;
-    padding-left: 91px;
+    padding-left: 88px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: @width-desktop) {
     padding-left: 81px;
+    padding-bottom: 18px;
+  }
+}
+
+.head-block__image {
+  padding-top: 12px;
+  padding-left: 20px;
+  margin-bottom: -13px;
+
+  @media (min-width: @width-tablet) {
+    display: none;
   }
 }
 
@@ -58,6 +88,12 @@
   display: inline-block;
   font-size: @fz-small;
   padding: 14px 74px 11px 73px;
+  margin-top: 14px;
+  margin-bottom: 4px;
+
+  @media (max-width: @width-mobile-only) {
+    width: 100%;
+  }
 
   @media (min-width: @width-tablet) {
     display: inline-block;
@@ -65,5 +101,10 @@
     line-height: 20px;
     font-weight: 400;
     padding: 17px 29px 15px 26px;
+    margin-left: 59px;
+  }
+
+  @media (min-width: @width-desktop) {
+    margin-left: 40px;
   }
 }

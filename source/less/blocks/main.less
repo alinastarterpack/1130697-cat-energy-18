@@ -2,15 +2,18 @@
   .inner();
   .subtitle-t-d();
   margin: 0;
-  padding: 0;
+  padding: 15px 0 27px 20px;
   border-bottom: 1px solid @color-border;
-  padding-bottom: 27px;
-  padding-top: 15px;
   color: @color-title;
 
   @media (min-width: @width-tablet) {
     .title-t-d();
-    padding-top: 55px;
-    padding-bottom: 120px;
+    padding-top: 56px;
+    padding-bottom: 88px;
+    border: 0 none;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-top: 72px;
   }
 }
