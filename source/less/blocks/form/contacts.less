@@ -4,6 +4,7 @@
   @media (min-width: @width-desktop) {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -11,32 +12,31 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   @media (min-width: @width-tablet) {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @width-desktop) {
-    width: 50%;
-    margin-right: 78px;
+    width: 46.72%;
   }
 }
 
 .contacts__title {
   .form-subtitle();
   width: 185px;
-  padding-top: 31px;
+  padding-top: 28px;
 
   @media (min-width: @width-tablet) {
     font-size: @fz-big;
     line-height: 36px;
     width: 515px;
-    padding-bottom: 75px;
+    padding-bottom: 77px;
   }
 
   @media (min-width: @width-desktop) {
-    padding-top: 47px;
+    padding-top: 21px;
   }
 }
 
@@ -54,4 +54,9 @@
   .entry-field();
   order: 2;
   flex-grow: 1;
+  padding: 13px 15px 11px;
+
+  @media (min-width: @width-tablet) {
+    padding: 13px 19px 13px;
+  }
 }

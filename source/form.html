@@ -9,10 +9,15 @@
     <header class="header">
       <div class="header__inner">
         <a class="header__logo logo" href="index.html">
-          <img class="logo__image" src="https://via.placeholder.com/191x39" width="191" height="39" alt="Логотип Cat Energy">
+          <picture class="logo__picture">
+            <source srcset="img/logo-mobile.png" media="(max-width: 767px)">
+            <source srcset="img/logo-tablet.svg" media="(max-width: 1299px)">
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+            <img class="logo__image" src="img/logo-desktop.svg" width="191" height="59" alt="Логотип Cat Energy">
+          </picture>
         </a>
-        <nav class="main-navigation">
-          <button class="main-navigation__toggle" type="button">Открыть меню</button>
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-navigation__list">
             <li class="main-navigation__item"><a href="index.html">Главная</a></li>
             <li class="main-navigation__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -97,7 +102,7 @@
             </fieldset>
             <div class="form__send">
               <button class="form__button button">Отправить заявку</button>
-              <small class="form__legend"><sup>*</sup> - Обязательные поля</small>
+              <small class="form__legend">* &#8212; Обязательные поля</small>
             </div>
           </form>
         </div>
@@ -105,8 +110,11 @@
       <section class="cooperation cooperation--inner">
         <div class="cooperation__inner">
           <h2 class="visually-hidden">Сотрудничество</h2>
-          <p class="cooperation__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <p class="cooperation__text">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <div class="cooperation__address">
+            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="cooperation__city">Санкт-Петербург</p>
+          </div>
         </div>
         <div class="cooperation__map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -116,7 +124,7 @@
     <footer class="footer">
       <div class="footer__inner">
         <a class="footer__logo logo" href="index.html">
-          <img class="logo__image" width="128" height="24" src="https://via.placeholder.com/128x24" alt="Cat Energy">
+          <img class="logo__image" width="128" height="24" src="img/logo-footer.svg" alt="Cat Energy">
         </a>
         <hr>
         <div class="footer__social social">
@@ -142,10 +150,11 @@
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/">
             <span class="copyright__link-title">HTML Academy</span>
-            <img class="copyright__link-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+            <img class="copyright__link-icon" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>
     </footer>
+    <script src="js/navigation-toggle.js"></script>
   </body>
 </html>

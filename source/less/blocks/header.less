@@ -1,13 +1,16 @@
 .header {
+  @media (max-width: @width-mobile-only) {
+    padding-top: 10px;
+  }
+
   @media (min-width: @width-tablet) {
     border-color: transparent;
   }
 }
 
 .header__inner {
-  .inner();
-
   @media (min-width: @width-tablet) {
+    .inner();
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,11 +23,15 @@
 }
 
 .header__logo {
+  @media (max-width: @width-mobile-only) {
+    .inner();
+  }
+
   @media (min-width: @width-tablet) {
-    padding-top: 10px;
+    padding-top: 24px;
   }
 
   @media (min-width: @width-desktop) {
-    padding-top: 38px;
+    padding-top: 54px;
   }
 }

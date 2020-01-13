@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 
   @media (min-width: @width-tablet) {
     .form-t-d();
@@ -15,6 +15,10 @@
   order: 1;
   color: @color-label;
   padding-right: 15px;
+
+  @media (min-width: @width-tablet) {
+    padding-right: 16px;
+  }
 }
 
 .personal__textfield {
@@ -22,8 +26,10 @@
   .entry-field();
   order: 2;
   flex-grow: 1;
+  padding: 15px;
 
   @media (min-width: @width-tablet) {
     height: 52px;
+    padding: 19px;
   }
 }
