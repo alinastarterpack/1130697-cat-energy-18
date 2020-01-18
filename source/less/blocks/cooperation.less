@@ -1,6 +1,10 @@
 .cooperation {
   &--index {
     background-color: @color-lightest;
+
+    @media (min-width: @width-desktop) {
+      width: 570px;
+    }
   }
 
   &--inner {
@@ -15,9 +19,9 @@
 .cooperation__inner {
   .inner();
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   line-height: 20px;
-  padding-top: 10px;
+  padding-top: 13px;
 
   @media (min-width: @width-tablet) {
     padding-top: 45px;
@@ -43,6 +47,11 @@
   color: @color-text;
   font-size: @fz-small;
   max-width: 135px;
+  padding-top: 2px;
+
+  @media (max-width: @width-mobile-only) {
+    max-height: 73px;
+  }
 
   @media (min-width: @width-tablet) {
     font-size: 16px;
@@ -51,10 +60,15 @@
     max-width: 155px;
     padding-right: 42px;
   }
+
+  @media (min-width: @width-desktop) {
+    text-align: left;
+  }
 }
 
 .cooperation__street {
   @media (min-width: @width-tablet) {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
+    padding-top: 2px;
   }
 }
