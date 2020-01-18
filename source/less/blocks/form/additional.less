@@ -1,16 +1,56 @@
 .additional__title {
   .form-subtitle();
-  margin-bottom: 6px;
+  position: relative;
+  margin: 0 -20px 7px 0;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: @color-accent;
+
+    @media (min-width: @width-tablet) {
+      top: 74px;
+    }
+
+    @media (min-width: @width-desktop) {
+      top: 76px;
+    }
+  }
 
   @media (min-width: @width-tablet) {
     font-size: 36px;
     line-height: 36px;
     padding-top: 52px;
-    margin-bottom: 24px;
+    margin: 0 -67px 24px -70px;
+    padding-left: 30px;
   }
 
   @media (min-width: @width-desktop) {
+    margin: 0 -40px;
     padding-top: 53px;
+  }
+}
+
+.additional__title-line {
+  background-color: @color-lightest;
+  position: relative;
+  width: 140px;
+  margin: 0;
+  padding: 0 24px 0 0;
+
+  @media (min-width: @width-tablet) {
+    width: 180px;
+    padding: 0 41px 0 39px;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding: 0 73px 0 39px;
+    margin-bottom: 25px;
   }
 }
 
@@ -19,7 +59,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 
   @media (min-width: @width-tablet) {
     flex-direction: row;
@@ -29,7 +69,7 @@
   }
 
   @media (min-width: @width-desktop) {
-    margin-bottom: 28px;
+    margin-bottom: 29px;
   }
 }
 
@@ -43,21 +83,52 @@
   }
 
   @media (min-width: @width-desktop) {
-    width: 23.5%;
+    width: 23.1%;
     margin-bottom: 20px;
   }
 }
 
 .additional__name {
   .input-header();
+  position: relative;
   text-transform: uppercase;
-  padding-left: 13px;
+  padding-left: 46px;
+  cursor: pointer;
+
+  &:hover::before {
+    border-color: #bcbcbc;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0;
+    display: block;
+    width: 28px;
+    height: 29px;
+    border: 1px solid @color-border;
+
+    @media (min-width: @width-tablet) {
+      top: -2px;
+      width: 38px;
+      height: 39px;
+    }
+  }
 
   @media (min-width: @width-tablet) {
-    padding: 9px 0 9px 45px;
+    padding: 9px 0 9px 58px;
   }
 }
 
 .additional__check {
   .entry-field();
+  display: none;
+
+  &:checked + .additional__name::before {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+  }
 }

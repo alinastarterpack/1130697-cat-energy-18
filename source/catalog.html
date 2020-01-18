@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог продукции Cat Energy</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,7 +14,7 @@
             <source srcset="img/logo-mobile.png" media="(max-width: 767px)">
             <source srcset="img/logo-tablet.svg" media="(max-width: 1299px)">
             <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-            <img class="logo__image" src="img/logo-desktop.svg" width="191" height="59" alt="Логотип Cat Energy">
+            <img class="logo__image" src="img/logo-desktop.svg" width="191" height="39" alt="Логотип Cat Energy">
           </picture>
         </a>
         <nav class="main-navigation main-navigation--closed main-navigation--nojs">
@@ -45,11 +46,7 @@
                 <div class="product__description product-description">
                   <div class="product-description__wrapper">
                     <table class="product-description__block">
-                      <thead>
-                        <tr>
-                          <th class="product-description__header">Cat Energy Pro 500 г</th>
-                        </tr>
-                      </thead>
+                          <caption class="product-description__header">Cat Energy Pro 500 г</caption>
                       <tbody>
                         <tr>
                           <td class="product-description__cell product-description__cell--title">Объём</td>
@@ -83,11 +80,7 @@
                 <div class="product__description product-description">
                   <div class="product-description__wrapper">
                     <table class="product-description__block">
-                      <thead>
-                        <tr>
-                          <th class="product-description__header">Cat Energy Pro 1000 г</th>
-                        </tr>
-                      </thead>
+                          <caption class="product-description__header">Cat Energy Pro 1000 г</caption>
                       <tbody>
                         <tr>
                           <td class="product-description__cell product-description__cell--title">Объём</td>
@@ -121,11 +114,7 @@
                 <div class="product__description product-description">
                   <div class="product-description__wrapper">
                     <table class="product-description__block">
-                      <thead>
-                        <tr>
-                          <th class="product-description__header">Cat Energy Pro 500 г</th>
-                        </tr>
-                      </thead>
+                          <caption class="product-description__header">Cat Energy Pro 500 г</caption>
                       <tbody>
                         <tr>
                           <td class="product-description__cell product-description__cell--title">Объём</td>
@@ -159,11 +148,7 @@
                 <div class="product__description product-description">
                   <div class="product-description__wrapper">
                     <table class="product-description__block">
-                      <thead>
-                        <tr>
-                          <th class="product-description__header">Cat Energy Pro 1000 г</th>
-                        </tr>
-                      </thead>
+                          <caption class="product-description__header">Cat Energy Pro 1000 г</caption>
                       <tbody>
                         <tr>
                           <td class="product-description__cell product-description__cell--title">Объём</td>
@@ -197,11 +182,7 @@
                 <div class="product__description product-description">
                   <div class="product-description__wrapper">
                     <table class="product-description__block">
-                      <thead>
-                        <tr>
-                          <th class="product-description__header">Cat Energy Slim 500 г</th>
-                        </tr>
-                      </thead>
+                          <caption class="product-description__header">Cat Energy Slim 500 г</caption>
                       <tbody>
                         <tr>
                           <td class="product-description__cell product-description__cell--title">Объём</td>
@@ -235,11 +216,7 @@
                 <div class="product__description product-description">
                   <div class="product-description__wrapper">
                     <table class="product-description__block">
-                      <thead>
-                        <tr>
-                          <th class="product-description__header">Cat Energy Slim 1000 г</th>
-                        </tr>
-                      </thead>
+                          <caption class="product-description__header">Cat Energy Slim 1000 г</caption>
                       <tbody>
                         <tr>
                           <td class="product-description__cell product-description__cell--title">Объём</td>
@@ -273,11 +250,7 @@
                 <div class="product__description product-description">
                   <div class="product-description__wrapper">
                     <table class="product-description__block">
-                      <thead>
-                        <tr>
-                          <th class="product-description__header">Cat Energy Slim 500 г</th>
-                        </tr>
-                      </thead>
+                      <caption class="product-description__header">Cat Energy Slim 500 г</caption>
                       <tbody>
                         <tr>
                           <td class="product-description__cell product-description__cell--title">Объём</td>
@@ -299,18 +272,20 @@
               <a class="product__button button" href="#">Заказать</a>
             </li>
             <li>
-              <a class="main-catalog__view-all" href="#">
+              <div class="main-catalog__view-all">
                 <h3 class="main-catalog__subtitle">Показать еще 100500 товаров</h3>
                 <p class="main-catalog__subtext">На самом деле вкусов гораздо больше!</p>
                 <button class="main-catalog__button button button--grey" type="button">Показать все</button>
-              </a>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="extra-catalog">
         <div class="extra-catalog__inner">
-          <h2 class="extra-catalog__title">Дополнительные товары</h2>
+          <h2 class="extra-catalog__title">
+            <span class="extra-catalog__title-line">Дополнительные товары</span>
+          </h2>
           <div class="extra-catalog__box">
             <ul class="extra-catalog__list">
               <li class="extra-catalog__item extra-product">
@@ -364,7 +339,10 @@
         <div class="cooperation__inner">
           <h2 class="visually-hidden">Сотрудничество</h2>
           <p class="cooperation__text">Приглашаем<br> к сотрудничеству дилеров!</p>
-          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <div class="cooperation__address">
+            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="cooperation__city">Санкт-Петербург</p>
+          </div>
         </div>
         <div class="cooperation__map">
           <h2 class="visually-hidden">Как до нас добраться</h2>

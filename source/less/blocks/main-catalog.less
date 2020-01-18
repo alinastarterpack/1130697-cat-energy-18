@@ -12,6 +12,7 @@
 
   @media (min-width: @width-desktop) {
     padding-left: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -30,19 +31,17 @@
 
 .main-catalog__item {
   box-sizing: border-box;
-  width: 320px;
-  min-height: 210px;
-  margin: 0 20px 0 -20px;
-  padding-left: 20px;
+  margin: 0 -20px 0;
+  padding: 0 20px 25px;
   border-bottom: 1px solid @color-border;
 
   @media (min-width: @width-tablet) {
+    width: 47.1%;
+    padding: 0 36px 22px 37px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 324px;
-    padding: @height-catalog-item;
     background-image: linear-gradient(to bottom, transparent 0, transparent 77px, #f2f2f2 77px, #f2f2f2 100%);
     margin: 0 0 63px;
 
@@ -52,56 +51,54 @@
   }
 
   @media (min-width: @width-desktop) {
-    width: 255px;
+    width: 20.27%;
     min-height: 208px;
-    margin-right: 5px;
+    margin-right: 80px;
+    margin-bottom: 65px;
+    padding: 0 20px 39px;
 
     &:nth-child(odd) {
       margin-left: 0;
     }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
 
-.product-description__block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .main-catalog__view-all {
-  display: block;
-  min-width: 200px;
+  width: 100%;
   min-height: 200px;
   background-image: url("../img/icon-plus.svg");
   background-repeat: no-repeat;
   background-size: 31px;
-  background-position: 124px 25px;
+  background-position: 50% 25px;
   border: 1px solid transparent;
   margin-right: 40px;
+  padding-bottom: 6px;
 
   @media (min-width: @width-tablet) {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    min-height: 432px;
     width: 324px;
+    min-height: 426px;
     background-size: 61px;
     background-position: center 55px;
     border-color: rgba(205, 205, 205, 0.5);
-    margin-right: 0;
-    margin-top: 75px;
+    margin: 75px 0 0 0;
   }
 
   @media (min-width: @width-desktop) {
     width: 255px;
-    min-height: 430px;
+    min-height: 424px;
   }
 }
 
 .main-catalog__subtitle {
   margin: 0;
-  padding: 79px 0 6px;
+  padding: 79px 0 7px;
   color: @color-title;
   text-align: center;
   font-weight: 400;
@@ -134,16 +131,19 @@
 }
 
 .main-catalog__button {
+  width: 100%;
   border: 0 none;
   font: inherit;
-  margin: 10px -7px 4px 0;
+  margin: 10px -7px 10px 0;
 
   @media (min-width: @width-tablet) {
+    width: 250px;
     padding: 9px 79px 9px 80px;
     margin: 68px 0 0 0;
   }
 
   @media (min-width: @width-desktop) {
-    padding: 13px 39px 12px 41px;
+    width: 171px;
+    padding: 9px 39px 8px 41px;
   }
 }

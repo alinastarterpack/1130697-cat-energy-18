@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы Cat Energy</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,7 +14,7 @@
             <source srcset="img/logo-mobile.png" media="(max-width: 767px)">
             <source srcset="img/logo-tablet.svg" media="(max-width: 1299px)">
             <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-            <img class="logo__image" src="img/logo-desktop.svg" width="191" height="59" alt="Логотип Cat Energy">
+            <img class="logo__image" src="img/logo-desktop.svg" width="191" height="39" alt="Логотип Cat Energy">
           </picture>
         </a>
         <nav class="main-navigation main-navigation--closed main-navigation--nojs">
@@ -49,7 +50,7 @@
             <fieldset class="fieldset__program-selection program-selection">
               <ul class="program-selection__list">
                 <li class="program-selection__item">
-                  <input class="program-selection__radio" type="radio" name="program" value="slim" id="program1">
+                  <input class="program-selection__radio" type="radio" checked name="program" value="slim" id="program1">
                   <label class="program-selection__label" for="program1">Похудение</label>
                 </li>
                 <li class="program-selection__item">
@@ -63,7 +64,9 @@
               </ul>
             </fieldset>
             <fieldset class="fieldset__contacts contacts">
-              <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+              <h2 class="contacts__title">
+                <p class="contacts__title-line">Контактные данные (владельца кота)</p>
+            </h2>
               <ul class="contacts__blocks">
                 <li class="contacts__block">
                   <input class="contacts__textfield" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -76,11 +79,15 @@
               </ul>
             </fieldset>
             <fieldset class="fieldset__comment comment">
-              <legend class="comment__title">Комментарий</legend>
+              <h2 class="comment__title">
+                <p class="comment__title-line">Комментарий</p>
+              </h2>
               <textarea class="comment__text" name="comment" cols="33" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="fieldset__additional additional">
-              <legend class="additional__title">Дополнительно</legend>
+              <h2 class="additional__title">
+                <p class="additional__title-line">Дополнительно</p>
+              </h2>
               <ul class="additional__list">
                 <li class="additional__item">
                   <input class="additional__check" type="checkbox" checked name="add" id="add1" value="sweetener">

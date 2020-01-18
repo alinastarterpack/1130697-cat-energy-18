@@ -1,12 +1,14 @@
 .main-navigation {
+  width: auto;
+
   @media (max-width: @width-mobile-only) {
     position: relative;
-    width: 320px;
     min-height: 198px;
   }
 
   @media (min-width: @width-tablet) {
-    width: 552px;
+    width: 62.14%; /* было 552px */
+    max-width: 806px;
     padding-left: 49px;
   }
 
@@ -134,7 +136,6 @@
     color: @color-label;
     font-size: 18px;
     text-align: left;
-    margin-left: 36px;
     border-color: transparent;
   }
 
