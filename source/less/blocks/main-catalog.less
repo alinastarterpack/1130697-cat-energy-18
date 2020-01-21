@@ -2,11 +2,11 @@
   .list-reset();
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   @media (min-width: @width-tablet) {
     padding-left: 20px;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -70,7 +70,7 @@
 .main-catalog__view-all {
   width: 100%;
   min-height: 200px;
-  background-image: url("../img/icon-plus.svg");
+  background-image: url("../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
   background-size: 31px;
   background-position: 50% 25px;
@@ -84,6 +84,7 @@
     align-items: center;
     width: 324px;
     min-height: 426px;
+    background-image: url("../img/icon-plus.svg");
     background-size: 61px;
     background-position: center 55px;
     border-color: rgba(205, 205, 205, 0.5);
