@@ -2,7 +2,7 @@
   box-sizing: border-box;
   background-color: @color-bg;
   width: auto;
-  padding: 0 20px;
+  padding: 23px 21px;
   margin-top: 20px;
   background-repeat: no-repeat;
 
@@ -24,45 +24,61 @@
   }
 
   &--slim {
-    background-image: url("../img/icon-cat-slim.svg");
-    background-size: 35px;
-    background-position: 30px 22px;
-
     @media (min-width: @width-tablet) {
-      background-image: url("../img/icon-cat-slim.svg");
       background-size: 141px;
       background-position: 475px 80px;
     }
 
     @media (min-width: @width-desktop) {
-      background-image: url("../img/icon-cat-slim.svg");
       background-size: 71px;
       background-position: 65px 41px;
     }
   }
 
   &--pro {
-    background-image: url("../img/icon-cat-pro.svg");
-    background-size: 67px;
-    background-position: 13px 35px;
-
     @media (min-width: @width-tablet) {
-      background-image: url("../img/icon-cat-pro.svg");
       background-size: 268px;
       background-position: 412px 135px;
     }
 
     @media (min-width: @width-desktop) {
-      background-image: url("../img/icon-cat-pro.svg");
       background-size: 134px;
       background-position: 34px 69px;
     }
   }
 }
 
+.program__box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.program__image {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: @color-accent;
+}
+
+.program__icon {
+  position: absolute;
+
+  &--slim {
+    left: 9px;
+    bottom: 3px;
+  }
+
+  &--pro {
+    top: 12px;
+    left: -8px;
+  }
+}
+
 .program__title {
   margin: 0;
-  padding: 29px 0 0 71px;
+  padding: 0 0 0 20px;
   color: @color-title;
   font-size: 24px;
   font-weight: 400;
@@ -80,12 +96,14 @@
 }
 
 .program__info {
-  width: auto;
+  width: 100%;
   font-family: @font-second;
   font-size: @fz-small;
   line-height: 18px;
   color: @color-text;
-  padding: 15px 0 8px;
+  margin: 22px 0 0 0;
+  padding: 0 0 22px;
+  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: @width-tablet) {
     .text-t-d();
@@ -124,15 +142,11 @@
 
 .program__catalog {
   display: block;
+  position: relative;
   color: @color-title;
   text-transform: uppercase;
   line-height: 16px;
-  padding: 19px 0 22px;
-  background-image: url("../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: 97px 22px;
-  border-top: 1px solid #e6e6e6;
+  padding: 19px 0 0;
 
   @media (min-width: @width-tablet) {
     font-size: 20px;
@@ -146,4 +160,12 @@
     padding-top: 16px;
     background-position: 164px 18px;
   }
+}
+
+.program__arrow-icon {
+  position: absolute;
+  top: 22px;
+  left: 97px;
+  width: 24px;
+  height: 11px;
 }
