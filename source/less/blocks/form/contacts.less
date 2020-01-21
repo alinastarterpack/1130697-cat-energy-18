@@ -9,6 +9,7 @@
 }
 
 .contacts__block {
+  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -102,5 +103,33 @@
 
   @media (min-width: @width-desktop) {
     padding: 13px 19px 14px;
+  }
+}
+
+.contacts__icon {
+  position: absolute;
+
+  &--email {
+    top: 17px;
+    right: 16px;
+
+    @media (min-width: @width-tablet) {
+      top: 20px;
+      right: 18px;
+    }
+  }
+
+  &--tel {
+    top: 14px;
+    right: 13px;
+
+    @media (min-width: @width-tablet) {
+      top: 17px;
+      right: 15px;
+    }
+
+    @media (min-width: @width-desktop) {
+      right: 18px;
+    }
   }
 }
