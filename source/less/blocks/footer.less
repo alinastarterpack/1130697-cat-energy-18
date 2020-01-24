@@ -26,10 +26,23 @@
   @media (min-width: @width-tablet) {
     width: 23%;
   }
+
+  @media (min-width: @width-desktop) {
+    width: 16%;
+  }
 }
 
 .footer__logo {
   margin: 39px 0 31px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__social {
@@ -47,6 +60,6 @@
   margin: 22px 0;
 
   @media (min-width: @width-tablet) {
-    width: 23%;
+    width: 17%;
   }
 }

@@ -32,6 +32,18 @@
     border-color: #bcbcbc;
   }
 
+  &:active {
+    border: solid 2px #444444;
+  }
+
+  &:focus:invalid {
+    border: solid 2px #ff8282;
+  }
+
+  &:required:valid {
+    border: solid 1px #cdcdcd;
+  }
+
   @media (min-width: @width-tablet) {
     height: 52px;
     padding: 19px;

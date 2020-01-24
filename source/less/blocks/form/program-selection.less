@@ -12,7 +12,7 @@
   }
 
   @media (min-width: @width-desktop) {
-    width: 620px;
+    width: 46.8%;
     height: 197px;
     margin-top: 0;
   }
@@ -49,7 +49,15 @@
   cursor: pointer;
 
   &:hover::before {
-    border-color: #bcbcbc;
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   &::before {
@@ -100,7 +108,6 @@
 
 .program-selection__radio {
   .entry-field();
-  display: none;
 
   &:checked + .program-selection__label::after {
     display: block;

@@ -19,6 +19,7 @@
 
     @media (min-width: @width-desktop) {
       top: 76px;
+      left: 40px;
     }
   }
 
@@ -49,7 +50,7 @@
   }
 
   @media (min-width: @width-desktop) {
-    padding: 0 73px 0 39px;
+    padding: 0 73px 0 8px;
     margin-bottom: 25px;
   }
 }
@@ -69,7 +70,7 @@
   }
 
   @media (min-width: @width-desktop) {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 }
 
@@ -83,7 +84,7 @@
   }
 
   @media (min-width: @width-desktop) {
-    width: 23.1%;
+    width: 245px;
     margin-bottom: 20px;
   }
 }
@@ -96,7 +97,15 @@
   cursor: pointer;
 
   &:hover::before {
-    border-color: #bcbcbc;
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   &::before {
@@ -123,7 +132,6 @@
 
 .additional__check {
   .entry-field();
-  display: none;
 
   &:checked + .additional__name::before {
     background-image: url("../img/icon-tick.svg");

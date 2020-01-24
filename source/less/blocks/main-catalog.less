@@ -2,6 +2,7 @@
   .list-reset();
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: @width-tablet) {
     padding-left: 20px;
@@ -51,10 +52,10 @@
   }
 
   @media (min-width: @width-desktop) {
-    width: 20.27%;
+    width: 20%;
     min-height: 208px;
-    margin-right: 80px;
-    margin-bottom: 65px;
+    margin-right: 81px;
+    margin-bottom: 66px;
     padding: 0 20px 39px;
 
     &:nth-child(odd) {
@@ -64,87 +65,5 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
-  }
-}
-
-.main-catalog__view-all {
-  width: 100%;
-  min-height: 200px;
-  background-image: url("../img/icon-plus-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: 31px;
-  background-position: 50% 25px;
-  border: 1px solid transparent;
-  margin-right: 40px;
-  padding-bottom: 6px;
-
-  @media (min-width: @width-tablet) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 324px;
-    min-height: 426px;
-    background-image: url("../img/icon-plus.svg");
-    background-size: 61px;
-    background-position: center 55px;
-    border-color: rgba(205, 205, 205, 0.5);
-    margin: 75px 0 0 0;
-  }
-
-  @media (min-width: @width-desktop) {
-    width: 255px;
-    min-height: 424px;
-  }
-}
-
-.main-catalog__subtitle {
-  margin: 0;
-  padding: 79px 0 7px;
-  color: @color-title;
-  text-align: center;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  font-size: 16px;
-
-  @media (min-width: @width-tablet) {
-    max-width: 135px;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 165px 0 26px;
-  }
-}
-
-.main-catalog__subtext {
-  text-align: center;
-  font-family: @font-second;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: @color-text;
-  margin-top: 0;
-
-  @media (min-width: @width-tablet) {
-    font-size: 16px;
-    max-width: 170px;
-    line-height: 18px;
-  }
-}
-
-.main-catalog__button {
-  width: 100%;
-  border: 0 none;
-  font: inherit;
-  margin: 10px -7px 10px 0;
-
-  @media (min-width: @width-tablet) {
-    width: 250px;
-    padding: 9px 79px 9px 80px;
-    margin: 68px 0 0 0;
-  }
-
-  @media (min-width: @width-desktop) {
-    width: 171px;
-    padding: 9px 39px 8px 41px;
   }
 }

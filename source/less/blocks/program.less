@@ -194,37 +194,50 @@
 }
 
 .program__catalog {
+  width: 150px;
   display: block;
-  position: relative;
   color: @color-title;
   text-transform: uppercase;
   line-height: 16px;
   padding: 19px 0 0;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+
+  &--slim {
+    background-position: 97px 22px;
+
+    @media (min-width: @width-tablet) {
+      background-position: 131px 35px;
+    }
+  }
+
+  &--pro {
+    background-position: 94px 22px;
+
+    @media (min-width: @width-tablet) {
+      background-position: 125px 35px;
+    }
+  }
+
 
   @media (min-width: @width-tablet) {
     width: 100%;
     font-size: 20px;
     background-size: 24px;
-    background-position: 164px 20px;
-    border-color: transparent;
     padding: 34px 0 0;
   }
 
   @media (min-width: @width-desktop) {
     margin-top: 0;
-    background-position: 164px 18px;
   }
-}
 
-.program__arrow-icon {
-  position: absolute;
-  top: 22px;
-  left: 97px;
-  width: 24px;
-  height: 11px;
+  &:hover {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
 
-  @media (min-width: @width-tablet) {
-    top: 36px;
-    left: 131px;
+  &:active {
+    opacity: 0.3;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 }
