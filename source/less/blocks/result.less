@@ -32,6 +32,12 @@
     }
   }
 
+  &--weight .result__item-text {
+    @media (min-width: @width-tablet) {
+      width: 115px;
+    }
+  }
+
   @media (min-width: @width-tablet) {
     width: 160px;
     padding: 15px 0 18px;
@@ -68,20 +74,14 @@
   @media (min-width: @width-tablet) {
     top: 63px;
     left: 19px;
-    width: 128px;
-    padding: 0;
+    width: 129px;
+    padding: 0 2px;
     font-size: @fz-small;
     background-color: #ffffff;
   }
 
   @media (min-width: @width-desktop) {
     background-color: @color-bg;
-  }
-}
-
-.result__item--weight .result__item-text {
-  @media (min-width: @width-tablet) {
-    width: 115px;
   }
 }
 

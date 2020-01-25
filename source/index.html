@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
+    <script src="/path/to/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <div style="display: none">
@@ -51,7 +56,7 @@
           <h2 class="visually-hidden">Программы питания</h2>
           <div class="programs-list__item program program--slim">
             <div class="program__box">
-              <div class="program__image" aria-label="Иконка каталога Slim">
+              <div class="program__image">
                 <svg class="program__icon program__icon--slim" width="35" height="49" aria-hidden="true" focusable="false"><use xlink:href="#icon-cat-slim"></use></svg>
               </div>
               <h3 class="program__title">Похудение</h3>
@@ -61,7 +66,7 @@
           </div>
           <div class="programs-list__item program program--pro">
             <div class="program__box">
-              <div class="program__image" aria-label="Иконка каталога Pro">
+              <div class="program__image">
                 <svg class="program__icon program__icon--pro" width="67" height="28" aria-hidden="true" focusable="false"><use xlink:href="#icon-cat-pro"></use></svg>
               </div>
               <h3 class="program__title">Набор массы</h3>
@@ -154,7 +159,7 @@
         </div>
       </section>
       <section class="cooperation cooperation--index">
-        <div class="cooperation__inner">
+        <div class="cooperation__inner cooperation__inner--index">
           <h2 class="visually-hidden">Сотрудничество</h2>
           <p class="cooperation__text">Приглашаем<br> к сотрудничеству дилеров!</p>
           <div class="cooperation__address">

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         map.behaviors.disable('scrollZoom');
         var placemark = new ymaps.Placemark([59.938727, 30.323047], {}, {
           iconLayout: "default#image",
-          iconImageHref: "../img/map-pin.png",
+          iconImageHref: "img/map-pin.png",
           iconImageSize: [55, 53],
           iconImageOffset: [-27, -53]
         });
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         map.behaviors.disable('scrollZoom');
         var placemark = new ymaps.Placemark([59.938609, 30.322994], {}, {
           iconLayout: "default#image",
-          iconImageHref: "../img/map-pin.png",
+          iconImageHref: "img/map-pin.png",
           iconImageSize: [113, 106],
           iconImageOffset: [-56, -106]
         });
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         map.behaviors.disable('scrollZoom');
         var placemark = new ymaps.Placemark([59.938727, 30.323047], {}, {
           iconLayout: "default#image",
-          iconImageHref: "../img/map-pin.png",
+          iconImageHref: "img/map-pin.png",
           iconImageSize: [113, 106],
           iconImageOffset: [-56, -106]
         });

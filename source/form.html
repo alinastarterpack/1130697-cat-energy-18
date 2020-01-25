@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <title>Подбор программы Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
+    <script src="/path/to/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <div style="display: none">
@@ -66,9 +71,9 @@
               </ul>
             </fieldset>
             <fieldset class="fieldset__contacts contacts">
-              <h2 class="contacts__title">
-                <p class="contacts__title-line">Контактные данные (владельца кота)</p>
-            </h2>
+              <div class="contacts__title-wrapper">
+                <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+              </div>
               <ul class="contacts__blocks">
                 <li class="contacts__block contacts__block--email">
                   <input class="contacts__textfield" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
@@ -83,15 +88,15 @@
               </ul>
             </fieldset>
             <fieldset class="fieldset__comment comment">
-              <h2 class="comment__title">
-                <p class="comment__title-line">Комментарий</p>
-              </h2>
+              <div class="comment__title-wrapper">
+                <h2 class="comment__title">Комментарий</h2>
+              </div>
               <textarea class="comment__text" name="comment" cols="33" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="fieldset__additional additional">
-              <h2 class="additional__title">
-                <p class="additional__title-line">Дополнительно</p>
-              </h2>
+              <div class="additional__title-wrapper">
+                <h2 class="additional__title">Дополнительно</h2>
+              </div>
               <ul class="additional__list">
                 <li class="additional__item">
                   <input class="additional__check visually-hidden" type="checkbox" checked="" name="add" id="add1" value="sweetener">
@@ -171,7 +176,7 @@
       </div>
     </footer>
     <script src="js/navigation-toggle.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=bbeb41af-3b2d-47bd-ba7a-fbfd62b48d47&lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bbeb41af-3b2d-47bd-ba7a-fbfd62b48d47&lang=ru_RU">
     </script>
     <script src="js/map.js"></script>
   </body>

@@ -4,7 +4,6 @@
   justify-content: flex-start;
 
   @media (min-width: @width-tablet) {
-    /* width: 100%; */
     justify-content: space-between;
     flex-direction: column;
   }
@@ -20,6 +19,7 @@
   }
 
   @media (min-width: @width-tablet) {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -34,7 +34,8 @@
 
 .product__image {
   @media (min-width: @width-tablet) {
-    padding-top: 13px;
+    padding: 13px 0 19px;
+    object-fit: cover;
 
     &--small {
       width: auto;
@@ -49,7 +50,7 @@
   }
 
   @media (min-width: @width-desktop) {
-    padding-top: 0;
+    padding: 0;
     margin-top: -10px;
   }
 }

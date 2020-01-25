@@ -1,4 +1,7 @@
 .cooperation {
+  position: relative;
+  min-height: 475px;
+
   &--index {
     background-color: @color-lightest;
   }
@@ -11,6 +14,10 @@
     }
   }
 
+  @media (min-width: @width-tablet) {
+    min-height: 600px;
+  }
+
   @media (min-width: @width-desktop) {
     position: relative;
     min-height: 400px;
@@ -21,12 +28,23 @@
   .inner();
   display: flex;
   justify-content: space-between;
+  position: relative;
   line-height: 20px;
   padding-top: 13px;
   padding-bottom: 9px;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: @color-bg;
+
+  &--index {
+    background-color: #ffffff;
+  }
 
   @media (min-width: @width-tablet) {
+    background-color: none;
     padding-top: 45px;
+    padding-bottom: 0;
     justify-content: space-between;
   }
 
@@ -37,6 +55,7 @@
     left: 40px;
     z-index: 20;
     width: 490px;
+    padding-bottom: 0;
   }
 }
 
@@ -45,10 +64,11 @@
   max-width: 141px;
 
   @media (min-width: @width-tablet) {
-    max-width: 154px;
+    max-width: 155px;
     font-size: 20px;
     line-height: 25px;
     padding: 0 0 39px 41px;
+    margin-right: auto;
   }
 
   @media (min-width: @width-desktop) {
@@ -61,7 +81,7 @@
   font-family: @font-second;
   color: @color-text;
   font-size: @fz-small;
-  max-width: 135px;
+  max-width: 140px;
   padding-top: 2px;
   margin-right: 5px;
 
@@ -107,6 +127,10 @@
   background-repeat: no-repeat;
   background-size: 55px 53px, cover;
   background-position: center, top left;
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  height: 400px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@2x.png");
@@ -117,6 +141,7 @@
     background-repeat: no-repeat;
     background-size: 113px 106px, cover;
     background-position: center, top left;
+    position: static;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");

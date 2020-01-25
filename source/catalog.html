@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <title>Каталог продукции Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.min.js"></script>
+    <script src="/path/to/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <div style="display: none">
@@ -285,9 +290,7 @@
       </section>
       <section class="extra-catalog">
         <div class="extra-catalog__inner">
-          <h2 class="extra-catalog__title">
-            <span class="extra-catalog__title-line">Дополнительные товары</span>
-          </h2>
+          <h2 class="extra-catalog__title">Дополнительные товары</h2>
           <div class="extra-catalog__box">
             <ul class="extra-catalog__list">
               <li class="extra-catalog__item extra-product">
@@ -390,7 +393,7 @@
       </div>
     </footer>
     <script src="js/navigation-toggle.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=bbeb41af-3b2d-47bd-ba7a-fbfd62b48d47&lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bbeb41af-3b2d-47bd-ba7a-fbfd62b48d47&lang=ru_RU">
     </script>
     <script src="js/map.js"></script>
   </body>

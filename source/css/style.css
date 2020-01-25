@@ -3014,13 +3014,6 @@ input [type="radio"].visually-hidden {
   border: 1px solid #ededed;
 }
 @media (min-width: 768px) {
-  .additional__name::before {
-    top: -2px;
-    width: 38px;
-    height: 39px;
-  }
-}
-@media (min-width: 768px) {
   .additional__name {
     padding: 9px 0 9px 58px;
   }

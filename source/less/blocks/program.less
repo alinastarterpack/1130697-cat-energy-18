@@ -1,7 +1,7 @@
 .program {
   box-sizing: border-box;
   background-color: @color-bg;
-  width: auto;
+  width: 100%;
   padding: 23px 21px;
   margin-top: 20px;
   background-repeat: no-repeat;
@@ -202,7 +202,8 @@
   padding: 19px 0 0;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 24px 12px;
+  background-color: @color-bg;
 
   &--slim {
     background-position: 97px 22px;
@@ -224,7 +225,6 @@
   @media (min-width: @width-tablet) {
     width: 100%;
     font-size: 20px;
-    background-size: 24px;
     padding: 34px 0 0;
   }
 
