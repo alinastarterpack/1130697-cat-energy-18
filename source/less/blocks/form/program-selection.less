@@ -7,12 +7,12 @@
   @media (min-width: @width-tablet) {
     box-sizing: border-box;
     border: 1px solid #e6e6e6;
-    margin: 53px 0 48px;
+    margin: 52px 0 47px;
     padding: 34px 0 0 28px;
   }
 
   @media (min-width: @width-desktop) {
-    width: 620px;
+    width: 46.8%;
     height: 197px;
     margin-top: 0;
   }
@@ -49,7 +49,15 @@
   cursor: pointer;
 
   &:hover::before {
-    border-color: #bcbcbc;
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   &::before {
@@ -100,7 +108,7 @@
 
 .program-selection__radio {
   .entry-field();
-  display: none;
+  outline: none;
 
   &:checked + .program-selection__label::after {
     display: block;

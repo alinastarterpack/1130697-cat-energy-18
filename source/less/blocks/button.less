@@ -8,9 +8,25 @@
   line-height: 14px;
   cursor: pointer;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--grey {
     padding: 12px 93px 11px 95px;
     background-color: @color-bg;
     color: @color-text;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }

@@ -1,5 +1,6 @@
 .copyright {
   line-height: 16px;
+  padding: 0;
 }
 
 .copyright__link {
@@ -7,12 +8,38 @@
   align-items: center;
   justify-content: space-between;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @width-tablet) {
     width: 162px;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 168px;
   }
 }
 
 .copyright__link-title {
   font-family: @font-second;
   color: @color-text;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-right: 12px;
+  }
+}
+
+.copyright__link-icon {
+  width: 41px;
+  height: 51px;
+  fill: #666666;
+
+  &:hover {
+    fill: @color-accent;
+  }
 }

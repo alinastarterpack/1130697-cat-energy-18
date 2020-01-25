@@ -2,7 +2,7 @@
   background-color: @color-bg;
 
   @media (min-width: @width-tablet) {
-    padding: 60px 0;
+    padding: 26px 0;
   }
 }
 
@@ -21,32 +21,58 @@
 
 .footer__logo-wrapper {
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 11px;
+  margin: 0;
+  height: 44px;
 
   @media (min-width: @width-tablet) {
-    width: 23%;
+    width: 31%;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 16%;
+    padding-top: 40px;
   }
 }
 
 .footer__logo {
   margin: 39px 0 31px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: @width-desktop) {
+    padding-top: 30px;
+  }
 }
 
 .footer__social {
   width: 100%;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 8px;
 
   @media (min-width: @width-tablet) {
+    width: 100%;
     border: 0 none;
   }
 }
 
 .footer__copyright {
   width: 100%;
-  margin: 22px 0;
+  margin: 11px 0 16px;
 
   @media (min-width: @width-tablet) {
-    width: 23%;
+    width: 35%;
+  }
+
+  @media (min-width: @width-desktop) {
+    width: 17%;
   }
 }

@@ -1,56 +1,49 @@
+.additional__title-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .additional__title {
   .form-subtitle();
-  position: relative;
-  margin: 0 -20px 7px 0;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0 23px 41px 0;
   font-weight: 400;
 
   &::before {
     content: "";
     position: absolute;
+    z-index: -1;
     top: 14px;
-    left: 0;
+    right: -20px;
     width: 100%;
     height: 3px;
     background-color: @color-accent;
 
     @media (min-width: @width-tablet) {
+      width: 200%;
       top: 74px;
+      right: -65px;
     }
 
     @media (min-width: @width-desktop) {
       top: 76px;
+      right: -40px;
     }
   }
 
   @media (min-width: @width-tablet) {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 52px;
-    margin: 0 -67px 24px -70px;
-    padding-left: 30px;
+    margin: 0 0 24px -40px;
+    padding: 52px 40px 34px;
   }
 
   @media (min-width: @width-desktop) {
-    margin: 0 -40px;
-    padding-top: 53px;
-  }
-}
-
-.additional__title-line {
-  background-color: @color-lightest;
-  position: relative;
-  width: 140px;
-  margin: 0;
-  padding: 0 24px 0 0;
-
-  @media (min-width: @width-tablet) {
-    width: 180px;
-    padding: 0 41px 0 39px;
-  }
-
-  @media (min-width: @width-desktop) {
-    padding: 0 73px 0 39px;
-    margin-bottom: 25px;
+    margin: 0 0 0 -40px;
+    padding: 54px 42px 58px 38px;
   }
 }
 
@@ -69,7 +62,7 @@
   }
 
   @media (min-width: @width-desktop) {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 }
 
@@ -83,7 +76,7 @@
   }
 
   @media (min-width: @width-desktop) {
-    width: 23.1%;
+    width: 245px;
     margin-bottom: 20px;
   }
 }
@@ -96,7 +89,15 @@
   cursor: pointer;
 
   &:hover::before {
-    border-color: #bcbcbc;
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   &::before {
@@ -123,7 +124,7 @@
 
 .additional__check {
   .entry-field();
-  display: none;
+  outline: none;
 
   &:checked + .additional__name::before {
     background-image: url("../img/icon-tick.svg");
