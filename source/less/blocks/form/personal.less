@@ -22,8 +22,9 @@
 }
 
 .personal__textfield {
-  height: 45px;
   .entry-field();
+  height: 45px;
+  box-sizing: border-box;
   order: 2;
   flex-grow: 1;
   padding: 15px;
@@ -33,20 +34,20 @@
     border-color: #bcbcbc;
   }
 
-  &:active {
+  &:focus {
     border: solid 2px #444444;
   }
 
-  &:focus:invalid {
+  &:invalid {
     border: solid 2px #ff8282;
   }
 
-  &:required:valid {
-    border: solid 1px #cdcdcd;
+  &:focus:invalid {
+    border: solid 2px #444444;
   }
 
   @media (min-width: @width-tablet) {
     height: 52px;
-    padding: 17px;
+    padding: 17px 17px 17px 19px;
   }
 }

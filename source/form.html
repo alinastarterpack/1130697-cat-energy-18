@@ -17,21 +17,25 @@
     </div>
     <header class="header">
       <div class="header__inner">
-        <a class="header__logo logo" href="index.html">
-          <picture>
-            <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="header__logo-image" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Логотип Cat Energy">
-          </picture>
-        </a>
-        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a class="main-navigation__link" href="index.html">Главная</a></li>
-            <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="main-navigation__item main-navigation__item--current-page"><a class="main-navigation__link">Подбор программы</a></li>
-          </ul>
-        </nav>
+        <div class="header__wrapper">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="header__logo-image" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+          <button class="header__nav-toggle header__nav-toggle--open header__nav-toggle--nojs" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <nav class="header__nav header__nav--closed header__nav--nojs">
+            <ul class="header__nav-list header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог продукции</a></li>
+              <li class="header__nav-item header__nav-item--current-page"><a class="header__nav-link">Подбор программы</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -82,7 +86,7 @@
                 </li>
                 <li class="contacts__block contacts__block--tel">
                   <input class="contacts__textfield" type="tel" name="phone-number" id="phone" placeholder="8 (960) 900-60-90" pattern="^(\d{11})$" required="">
-                  <label class="contacts__label" for="phone">Телефон:*</label>
+                  <label class="contacts__label contacts__label--tel" for="phone">Телефон:*</label>
                   <svg class="contacts__icon contacts__icon--tel" width="21" height="21" aria-hidden="true" focusable="false"><use xlink:href="#icon-phone"></use></svg>
                 </li>
               </ul>

@@ -13,7 +13,7 @@
 
   @media (min-width: @width-desktop) {
     width: 46.8%;
-    height: 197px;
+    min-height: 197px;
     margin-top: 0;
   }
 }
@@ -112,5 +112,9 @@
 
   &:checked + .program-selection__label::after {
     display: block;
+  }
+
+  &:focus ~ .program-selection__label::before {
+    border-color: #bababa;
   }
 }

@@ -1,11 +1,44 @@
 .promo-block {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 305px;
-  background-position: 50% 0;
+  position: relative;
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 306px;
+    z-index: -1;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 320px 305px;
+    background-color: #63a73a;
+    background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+
+    @media (min-width: @width-tablet) {
+      display: none;
+    }
+
+    @media (min-width: @width-desktop) {
+      display: block;
+      width: 50%;
+      height: 697px;
+      z-index: -1;
+      top: -119px;
+      right: 0;
+      left: inherit;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #63a73a;
+      background-position: 0 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 
   @media (min-width: @width-tablet) {
@@ -15,7 +48,7 @@
     background-position: 54% 106%;
     background-size: 709px 609px;
     background-color: transparent;
-    padding: 54px 0 509px;
+    padding: 52px 0 512px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-can-tablet@2x.jpg");
@@ -23,17 +56,15 @@
   }
 
   @media (min-width: @width-desktop) {
-    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-can-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 65.5% 56%, 111.3% 0;
-    background-size: 552px 499px, 715px 697px;
-    background-color: transparent, @color-accent;
-    margin-top: -119px;
-    padding-top: 159px;
-    padding-bottom: 237px;
+    background-position: 65.5% 18%;
+    background-size: 552px 499px;
+    background-color: transparent;
+    padding-bottom: 239px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-can-desktop@2x.png");
     }
   }
 }
@@ -66,7 +97,7 @@
 
   @media (min-width: @width-desktop) {
     padding-left: 81px;
-    padding-top: 64px;
+    padding-top: 52px;
   }
 }
 
@@ -113,18 +144,19 @@
 .promo-block__button {
   display: inline-block;
   font-size: @fz-small;
-  padding: 14px 74px 11px 73px;
+  line-height: 20px;
+  padding: 10px 15px;
   margin-top: 14px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 
   @media (max-width: @width-mobile-only) {
     width: 100%;
+    text-align: center;
   }
 
   @media (min-width: @width-tablet) {
     display: inline-block;
     font-size: 20px;
-    line-height: 20px;
     font-weight: 400;
     padding: 17px 29px 15px 26px;
     margin-left: 7.4vw;
