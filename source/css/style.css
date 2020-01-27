@@ -366,7 +366,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
 }
-.visually-hidden,
+.visually-hidden:not(:focus):not(:active),
 input [type="checkbox"].visually-hidden,
 input [type="radio"].visually-hidden {
   position: absolute;

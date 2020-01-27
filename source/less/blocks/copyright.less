@@ -1,10 +1,6 @@
 .copyright {
   line-height: 16px;
   padding: 0;
-
-  @media (min-width: @width-desktop) {
-    padding-top: 7px;
-  }
 }
 
 .copyright__link {
@@ -16,14 +12,12 @@
     opacity: 0.3;
   }
 
-  &:hover .copyright__link-icon {
-    fill: @color-accent;
+  @media (min-width: @width-tablet) {
+    width: 162px;
   }
 
-  @media (min-width: @width-tablet) {
-    width: 100%;
-    justify-content: flex-end;
-    margin: auto;
+  @media (min-width: @width-desktop) {
+    width: 168px;
   }
 }
 
@@ -34,19 +28,18 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: @width-desktop) {
+    padding-right: 12px;
+  }
 }
 
 .copyright__link-icon {
   width: 41px;
   height: 51px;
   fill: #666666;
-  margin-right: -5px;
 
-  @media (min-width: @width-tablet) {
-    margin: 0 -7px 0 14px;
-  }
-
-  @media (min-width: @width-desktop) {
-    margin-left: 16px;
+  &:hover {
+    fill: @color-accent;
   }
 }
