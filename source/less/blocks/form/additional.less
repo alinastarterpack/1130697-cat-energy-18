@@ -124,12 +124,15 @@
 
 .additional__check {
   .entry-field();
-  outline: none;
 
   &:checked + .additional__name::before {
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
+  }
+
+  &:focus ~ .additional__name::before {
+    border-color: #bababa;
   }
 }
