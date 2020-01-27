@@ -90,41 +90,56 @@
   @media (min-width: @width-tablet) {
     padding-right: 20px;
   }
+
+  &--tel {
+    @media (min-width: @width-tablet) {
+      padding-right: 12px;
+    }
+  }
 }
 
 .contacts__textfield {
+  box-sizing: border-box;
   .entry-field();
   order: 2;
   flex-grow: 1;
-  padding: 13px 15px 12px;
+  padding: 13px 45px 12px 15px;
   outline: none;
 
   &:hover {
     border-color: #bcbcbc;
   }
 
-  &:focus:invalid {
+  &:focus {
+    border: solid 2px #444444;
+  }
+
+  &:invalid {
     border: solid 2px #ff8282;
   }
 
-  &:required:valid {
-    border: solid 1px #cdcdcd;
+  &:focus:invalid {
+    border: solid 2px #444444;
   }
 
   &:focus ~ .contacts__icon {
     fill: @color-accent;
   }
 
-  &:focus:invalid ~ .contacts__icon {
+  &:invalid ~ .contacts__icon {
     fill: #ff8282;
   }
 
+  &:focus:invalid ~ .contacts__icon {
+    fill: @color-accent;
+  }
+
   @media (min-width: @width-tablet) {
-    padding: 13px 19px 13px;
+    padding: 13px 45px 13px 19px;
   }
 
   @media (min-width: @width-desktop) {
-    padding: 13px 19px 14px;
+    padding: 13px 45px 14px 19px;
   }
 }
 
