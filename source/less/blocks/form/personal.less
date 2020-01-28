@@ -36,10 +36,12 @@
 
   &:focus {
     border: solid 2px #444444;
+    padding: 14px;
   }
 
   &:invalid {
     border: solid 2px #ff8282;
+    padding: 14px;
   }
 
   &:focus:invalid {
@@ -49,5 +51,13 @@
   @media (min-width: @width-tablet) {
     height: 52px;
     padding: 17px 17px 17px 19px;
+
+    &:focus {
+      padding: 16px 16px 16px 18px;
+    }
+
+    &:invalid {
+      padding: 16px 16px 16px 18px;
+    }
   }
 }

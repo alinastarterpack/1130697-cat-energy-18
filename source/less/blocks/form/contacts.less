@@ -101,6 +101,7 @@
 .contacts__textfield {
   box-sizing: border-box;
   .entry-field();
+  height: 45px;
   order: 2;
   flex-grow: 1;
   padding: 13px 45px 12px 15px;
@@ -112,10 +113,12 @@
 
   &:focus {
     border: solid 2px #444444;
+    padding: 12px 44px 11px 14px;
   }
 
   &:invalid {
     border: solid 2px #ff8282;
+    padding: 12px 44px 11px 14px;
   }
 
   &:focus:invalid {
@@ -135,11 +138,28 @@
   }
 
   @media (min-width: @width-tablet) {
+    height: 52px;
     padding: 13px 45px 13px 19px;
+
+    &:focus {
+      padding: 12px 44px 12px 18px;
+    }
+
+    &:invalid {
+      padding: 12px 44px 12px 18px;
+    }
   }
 
   @media (min-width: @width-desktop) {
     padding: 13px 45px 14px 19px;
+
+    &:focus {
+      padding: 12px 44px 13px 18px;
+    }
+
+    &:invalid {
+      padding: 12px 44px 13px 18px;
+    }
   }
 }
 
